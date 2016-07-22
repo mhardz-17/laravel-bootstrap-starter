@@ -149,6 +149,9 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        //        Collective\Html\HtmlServiceProvider::class,
+        App\Services\Html\HtmlServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -158,6 +161,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        App\Providers\CustomValidationServiceProvider::class,
+        App\Providers\QueryBuilderServiceProvider::class
     ],
 
     /*
